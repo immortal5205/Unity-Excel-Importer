@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4719b1645924d40499a310a791b3b8f9, type: 3}
+  m_Name: CardData_SO
+  m_EditorClassIdentifier: 
+  SkillCard:
+  - ID: A00001
+    IconPath: Sprites+Apple
+    IconSprite: {fileID: 21300000, guid: 8e1f416c7d68f5f4494ad45eee82af26, type: 3}
+    FramePath: Textures+Gold_Parts
+    FrameTexture: {fileID: 2800000, guid: 0881d080a949e8a4e9fdd5b6f2bd6d0f, type: 3}
+  - ID: A00002
+    IconPath: Sprites+Arrow_01
+    IconSprite: {fileID: 21300000, guid: e30eb9c3272550d49acfb818d86bd67b, type: 3}
+    FramePath: Textures+Hammer_01
+    FrameTexture: {fileID: 2800000, guid: e6b241e893089a444ada2b7be8ed5f7b, type: 3}
+  - ID: A00003
+    IconPath: Sprites+Axe_01
+    IconSprite: {fileID: 21300000, guid: f8a0997c30b33fd42998800317e977d3, type: 3}
+    FramePath: Textures+Head_01
+    FrameTexture: {fileID: 2800000, guid: fc6468be32c0f5449bef5dee3059a6f6, type: 3}
+  - ID: A00004
+    IconPath: Sprites+Belt_01
+    IconSprite: {fileID: 21300000, guid: ef2aada22ec60b14ab1a3e234ab5dc8a, type: 3}
+    FramePath: Textures+Holly_Spell_02
+    FrameTexture: {fileID: 2800000, guid: dc90b2c236cbacf47b20a1294efdf59d, type: 3}
+  - ID: A00005
+    IconPath: Sprites+Book_03
+    IconSprite: {fileID: 21300000, guid: f1ec4da94f3fce84887017bd602a7b98, type: 3}
+    FramePath: Textures+Paper
+    FrameTexture: {fileID: 2800000, guid: 21c4a8515a327db4a89489131daee51d, type: 3}
+  - ID: A00006
+    IconPath: Sprites+Chest_01
+    IconSprite: {fileID: 21300000, guid: 0010e352a9b1abc4ebab3f3235c95e0b, type: 3}
+    FramePath: Textures+Potion
+    FrameTexture: {fileID: 2800000, guid: 51e90e2f352d93d49b72bebce22d5c10, type: 3}
+  - ID: A00007
+    IconPath: Sprites+Fantasy_Spell_06_0
+    IconSprite: {fileID: -1958438806, guid: dbe6f37e950b2db4599be80d656b8985, type: 3}
+    FramePath: 
+    FrameTexture: {fileID: 0}
+  - ID: A00008
+    IconPath: Sprites+Fantasy_Spell_06_1
+    IconSprite: {fileID: 141178515, guid: dbe6f37e950b2db4599be80d656b8985, type: 3}
+    FramePath: 
+    FrameTexture: {fileID: 0}
+  - ID: A00009
+    IconPath: Sprites+Fantasy_Spell_06_2
+    IconSprite: {fileID: 76782620, guid: dbe6f37e950b2db4599be80d656b8985, type: 3}
+    FramePath: 
+    FrameTexture: {fileID: 0}
+  - ID: A00010
+    IconPath: Sprites+Fantasy_Spell_06_3
+    IconSprite: {fileID: -1182745703, guid: dbe6f37e950b2db4599be80d656b8985, type: 3}
+    FramePath: 
+    FrameTexture: {fileID: 0}
