@@ -7,7 +7,7 @@ public class AttributeExtension
 {
     
 }
-namespace NuoYan.AttributeExtension
+namespace NuoYan.Extension
 {
     /// <summary>
     /// 颜色

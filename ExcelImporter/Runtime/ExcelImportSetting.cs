@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using NuoYan.AttributeExtension;
+using NuoYan.Extension;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "NuoYan/Excel/ExcelImportSetting")]

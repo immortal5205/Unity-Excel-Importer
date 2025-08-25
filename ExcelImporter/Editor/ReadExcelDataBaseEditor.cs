@@ -78,7 +78,7 @@ public class ReadExcelDataBaseEditor : Editor
         EditorGUILayout.BeginHorizontal();
         {
             EditorGUILayout.LabelField("SO");
-            EditorGUILayout.ObjectField(excelDataBaseSO, typeof(ReadExcelDataBase), false);
+            EditorGUILayout.ObjectField(excelDataBaseSO, typeof(ReadExcelDataBaseSO), false);
         }
         EditorGUILayout.EndHorizontal();
         EditorGUILayout.LabelField("Settings Path", settingPath);

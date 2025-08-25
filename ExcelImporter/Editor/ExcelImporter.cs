@@ -11,7 +11,6 @@ using System.Linq;
 
 
 
-
 public class ExcelImporter : AssetPostprocessor
 {
 	public class ExcelAssetInfo

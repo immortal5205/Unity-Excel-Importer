@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,7 +8,7 @@ using UnityEngine;
 /// <summary>
 /// 用于制作拓展功能基类
 /// </summary>
-public abstract class ReadExcelDataBaseSO : ScriptableObject
+public abstract class ReadExcelDataBaseSO : ScriptableObject, IEnumerable<KeyValuePair<string, ItemDataBase>>
 {
 	/// <summary>
 	/// 数据缓存字典
@@ -37,7 +38,7 @@ public abstract class ReadExcelDataBaseSO : ScriptableObject
 	}
 	public ItemDataBase GetData(string key)
 	{
-		if(string.IsNullOrEmpty(key)) return null;
+		if (string.IsNullOrEmpty(key)) return null;
 		if (ItemDataDic.ContainsKey(key))
 		{
 			return ItemDataDic[key];
@@ -64,18 +65,9 @@ public abstract class ReadExcelDataBaseSO : ScriptableObject
 			Debug.LogError($"没有找到key为<{key}>的数据");
 		}
 	}
-	public int Count()
-	{
-		return ItemDataDic.Count;
-	}
-	public string[] Keys()
-	{
-		return ItemDataDic.Keys.ToArray();
-	}
-	public ItemDataBase[] Values()
-	{
-		return ItemDataDic.Values.ToArray();
-	}
+	public int Count => ItemDataDic.Count;
+	public IEnumerable<string> Keys => ItemDataDic.Keys;
+	public IEnumerable<ItemDataBase> Values => ItemDataDic.Values;
 	public int IndexOfKey(string key)
 	{
 		var list = ItemDataDic.Keys.ToList();
@@ -103,5 +95,23 @@ public abstract class ReadExcelDataBaseSO : ScriptableObject
 		return ItemDataDic.ContainsValue(value);
 	}
 	public abstract void Init();
-	
+
+	public IEnumerator<KeyValuePair<string, ItemDataBase>> GetEnumerator()
+	{
+		foreach (var item in ItemDataDic)
+		{
+			yield return item;
+		}
+	}
+
+	IEnumerator IEnumerable.GetEnumerator()
+	{
+		return GetEnumerator();
+	}
+
+	public ItemDataBase this[string key]
+	{
+		get { return GetData(key); }
+		set { AddData(key, value); }
+	}
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
-namespace NuoYan.AttributeExtension
+namespace NuoYan.Extension
 {
     [CustomPropertyDrawer(typeof(ReadInEditor), true)]
     public class ReadInEditorEditor : PropertyDrawer
