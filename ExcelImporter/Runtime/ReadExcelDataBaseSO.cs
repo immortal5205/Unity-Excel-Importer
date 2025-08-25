@@ -13,7 +13,7 @@ public abstract class ReadExcelDataBaseSO : ScriptableObject
 	/// 数据缓存字典
 	/// </summary>
 	protected Dictionary<string, ItemDataBase> ItemDataDic = new Dictionary<string, ItemDataBase>();
-	public string excelFilePath{ get; set; }
+	public string excelFilePath;
 	[ContextMenu("Set Flages")]
 	public void SetFlages()
 	{
