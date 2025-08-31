@@ -1,18 +1,20 @@
-用于在 Unity 编辑器中将数据从 xls、xlsx 自动导入到自定义 ScriptableObject 的扩展，基于https://github.com/mikito/unity-excel-importer 的修改
+![4](https://github.com/user-attachments/assets/dcfe9e9f-83a3-4c1e-9699-78eaed6f448c)用于在 Unity 编辑器中将数据从 xls、xlsx 自动导入到自定义 ScriptableObject 的扩展，基于https://github.com/mikito/unity-excel-importer 的修改
 这里建议先查看原作者介绍的使用方法，掌握后在查看篇
-使用方法可以查看原作者的介绍，这里介绍如何配置图片的读取
+使用方法可以查看原作者的介绍，这里介绍如何配置Unity资源类型的配置
 
-## 1、属性的命名
-在类中需要将图片的路径命名为”---Path“，图片命名为”---Sprite“或者”---Texture“，如下图（-名字要相同- ）
+ 1、创建ExcelImprortSettings
+![1](https://github.com/user-attachments/assets/2de488d3-1742-4061-95d3-3cef112ef626)
 
-![01](https://github.com/user-attachments/assets/debfa762-9b16-4182-8cd5-d9fcd43ceeea)
-## 2、资源路径
-将想要读取的图片资源放在Resoures文件夹中
-
-![03](https://github.com/user-attachments/assets/a9766711-f6db-4272-902d-aea9cb6a2b69)
-## 3、配置表格
-只需要配置图片的路径即可
-![04](https://github.com/user-attachments/assets/53476a86-b2e5-428f-9093-c4922f3df9e0)
+## 2、选择输入输出路径
+（1）表格资源路径：可以设置在这个工程文件的任意位置
+（2）脚本与SO文件的输出路径需要在Assets内
+这里的路径字段均为String类型，之所以在Inspector面板显示为下拉选项框，是因为特性的原因
+![3](https://github.com/user-attachments/assets/7d958b33-148b-44f8-8a4f-fa6fa28f52fa)
+配置好后点击ExcelImprortSettings中对应的选项即可
+## 3、配置类型字段
+路径字段为String类型，需要字段名为“××Path”
+资源类型字段，需要字段名为“××类型的Type”
+![Uploading 4.png…]()
 
 ## 4、刷新
 表格配置好后，返回Unity，如果SO文件没有更新，需要Reimport下
