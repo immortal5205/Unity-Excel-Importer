@@ -210,7 +210,7 @@ public static class ExcelSyncTool
 
     private static void BackupExcel(string path)
     {
-        string backupPath = $"{path}.bak";
+        string backupPath = $"{path}{System.DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss")}.bak";
         if (File.Exists(backupPath))
             File.Delete(backupPath);
         File.Copy(path, backupPath);
