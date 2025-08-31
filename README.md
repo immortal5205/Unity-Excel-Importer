@@ -1,4 +1,4 @@
-![4](https://github.com/user-attachments/assets/dcfe9e9f-83a3-4c1e-9699-78eaed6f448c)用于在 Unity 编辑器中将数据从 xls、xlsx 自动导入到自定义 ScriptableObject 的扩展，基于https://github.com/mikito/unity-excel-importer 的修改
+用于在 Unity 编辑器中将数据从 xls、xlsx 自动导入到自定义 ScriptableObject 的扩展，基于https://github.com/mikito/unity-excel-importer 的修改
 这里建议先查看原作者介绍的使用方法，掌握后在查看篇
 使用方法可以查看原作者的介绍，这里介绍如何配置Unity资源类型的配置
 
@@ -14,20 +14,22 @@
 ## 3、配置类型字段
 路径字段为String类型，需要字段名为“××Path”
 资源类型字段，需要字段名为“××类型的Type”
-![Uploading 4.png…]()
 
-## 4、刷新
-表格配置好后，返回Unity，如果SO文件没有更新，需要Reimport下
-![06](https://github.com/user-attachments/assets/b6cb7e35-2b7e-42f2-acdd-166641e27426)
+![4](https://github.com/user-attachments/assets/ce7da973-b642-4d83-b744-aee1646855dc)
 
+## 4、表格配置
+之前的版本中只能将资源放在Resources中，并且配置路径时也十分繁杂，现在可以将其放在Assets中的任意位置，然后配置成【Assets+资源名】即可
+![5](https://github.com/user-attachments/assets/cf05deb9-8928-46ed-af5d-8f7acedf5e44)
+注意：如果资源类型为Sprite，需要确保资源自身的名字与Sprite类型的名字相同
 
-如果你想要在编辑器下修改读取的SO文件，可以继承 ReadExcelDataBaseSO ，此时点击资源右上角的三个点多出两个选项
+![7](https://github.com/user-attachments/assets/e1bf1c04-cb9c-4827-be4e-87b826a5846b)
+
+如果想要在编辑器下修改读取的SO文件，点击资源右上角的三个点多出两个选项
 SetFlages 打开编辑
 HideFlages 关闭编辑
 
 ![07](https://github.com/user-attachments/assets/696841a7-d001-4c75-86db-a3b0b1525d97)
 
+点击之后会出现【同步到Excel】选项，点击会将SO当前中的数据同步到Excel中，并将当前的Excel文件内容备份，防止失误
 
-tips：由于AssetsDatabase读取资源时需要传入全部的路径和资源的后缀，笔者感觉有点麻烦，所以这里用的是Resource，如果想要修改成其他方法，只需要修改Excelimporter中的如下方法
-
-![02](https://github.com/user-attachments/assets/3ec75570-987f-4ac7-9a74-1a64d13efe6a)
+![9](https://github.com/user-attachments/assets/091a372c-3e5e-458c-948f-9bb540a91db6)
