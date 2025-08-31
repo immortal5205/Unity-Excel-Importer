@@ -29,21 +29,21 @@ public class ReadExcelDataBaseEditor : Editor
     public static ExcelImportSetting[] FindAllExcelImportSettings()
     {
         List<ExcelImportSetting> results = new List<ExcelImportSetting>();
-        
+
         string[] guids = AssetDatabase.FindAssets($"t:{nameof(ExcelImportSetting)}");
-        
+
         foreach (string guid in guids)
         {
             string assetPath = AssetDatabase.GUIDToAssetPath(guid);
 
             ExcelImportSetting setting = AssetDatabase.LoadAssetAtPath<ExcelImportSetting>(assetPath);
-            
+
             if (setting != null)
             {
                 results.Add(setting);
             }
         }
-        
+
         return results.ToArray();
     }
 
@@ -102,6 +102,6 @@ public class ReadExcelDataBaseEditor : Editor
         }
         base.OnInspectorGUI();
 
-        
+
     }
 }
