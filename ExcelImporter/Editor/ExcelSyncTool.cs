@@ -131,7 +131,7 @@ public static class ExcelSyncTool
         }
 
         // 获取实体字段（用于反射取值）
-        FieldInfo[] entityFields = entityType.GetFields(BindingFlags.Public | BindingFlags.Instance);
+        FieldInfo[] entityFields = entityType.GetFields(BindingFlags.Public | BindingFlags.Instance | BindingFlags.NonPublic);
 
         int rowIndex = 1; // 数据从第1行开始
         foreach (var entity in dataList)

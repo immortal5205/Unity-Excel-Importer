@@ -8,9 +8,9 @@ public class ExcelImportSetting : ScriptableObject
     [Tooltip("工程目录下存放Excel的路径")]
     [EnumArray(new[] { "ExcelAssets", "Assets/GameMain/DataTables/Tables" })]
     public string excelAssetsPath = "";
-    [EnumArray(new[] { "Assets/GameMain/Scripts/DataTable/SOScripts" })]
+    [EnumArray(new[] { "Assets/Scripts/SOScripts" })]
     public string outpScriptPath = "";
     [Tooltip("Assets目录下的输出路径")]
-    [EnumArray(new[] { "Assets/GameMain/DataTables/Tables", "Assets/GameMain/DataTables/ExcelData" })]
+    [EnumArray(new[] { "Assets/SOAssets" })]
     public string outputSOAssetsPath = "";
 }
