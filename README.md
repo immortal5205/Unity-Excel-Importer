@@ -30,6 +30,6 @@ HideFlages 关闭编辑
 
 ![07](https://github.com/user-attachments/assets/696841a7-d001-4c75-86db-a3b0b1525d97)
 
-点击之后会出现【同步到Excel】选项，点击会将SO当前中的数据同步到Excel中，并将当前的Excel文件内容备份，防止失误
+点击之后会出现【同步到Excel】选项，点击会将SO当前中的数据同步到Excel中，并将当前的Excel文件内容备份，防止失误，需要当前的表格不处于打开状态
 
 ![9](https://github.com/user-attachments/assets/091a372c-3e5e-458c-948f-9bb540a91db6)
