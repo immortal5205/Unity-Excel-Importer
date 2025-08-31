@@ -1,0 +1,18 @@
+{
+  "name": "net.mikinya.unity-excel-importer",
+  "displayName": "Unity Excel Importer",
+  "version": "0.1.1",
+  "unity": "2022.3",
+  "description": "用于在 Unity 编辑器中将数据从 xls、xlsx 自动导入到自定义 ScriptableObject 的扩展，基于https://github.com/mikito/unity-excel-importer的修改",
+  "license": "MIT(This software includes the work that is distributed in the Apache License 2.0)",
+  "gitDependencies": {},
+  "samples": [
+    {
+      "displayName": "Example",
+      "path": "Example~"
+    }
+  ],
+  "author": {
+    "name": "Mikito Yoshiya，NuoYan"
+  }
+}
